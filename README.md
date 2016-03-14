@@ -1,81 +1,81 @@
 # AngularJS refactoring playground
 
-Mit dem vorliegenden Beispielcode können Refactoring-Szenarien diskutiert und geübt werden.
+With the present example, code refactoring scenarios can be discussed and practiced.
 
-##Szenario
-+ Die Anwendung besteht aus zwei Ansichten.
-    + Der Anmeldedialog - bestehend aus einer Eingabe für Benutzername 'foo' und Passwort 'password'.
-    + Der Bilderansicht - bestehend aus zwei Bilder mit hinterlegten Metadaten, welche per Mouse-Hover gelesen werden können.
-+ Der Benutzer gelangt zuerst auf die Login Sicht und gibt die Benutzerdaten ein.
-    + Bei gültigen Benutzerdaten gelangt der Benutzer auf die Bilderansicht.
-    + Bei ungültigen Benutzerdaten erscheint eine Benachrichtigung.
+##Scenario
++ The application consists of two views.
+    + The login dialog - consisting of an input user name 'foo' and password 'password'.
+    + The picture view - consisting of two images with stored metadata, which can be read by mouse hover.
++ The user first enters the login view and enters the user data.
+    + When valid user data the user enters in the picture view.
+    + For invalid user data a notification appears.
 
-## Themen
-Der Fokus liegt auf den folgenden Themen:
+## Subjects
+The focus is on the following topics:
 
-+ Software-Architektonische Aspekte wie z.B. SOLID
-+ Refactoring Grundlagen
-    + Basis für Refactoring schaffen
-    + Bad smells erkennen, beheben & testen
-+ Javascript Grundlagen
-+ AngularJS Grundlagen
-    + Aufbau einer AngularJS Anwendung
-        + Erklärung Pattern MV* (MVC/MVVM)
-    + Erkennen bzw. Erklären der Konzepte in AngularJS wie z.B.
-        + Scopes
-        + Data Binding (Two-Way Binding vs. One-Way Binding)
-        + Depdendency Injection & Injector
-        + Templates
-        + Expressions
-        + Filters
-        + Direktiven
-        + Modules
-        + Routing
-+ AngularJS und die Integration mit anderen JS-Frameworks, wie z.B. JQuery, ZeptoJS vs. JQlite
-+ Dependency Mgmt
-    + Optimierung -> Einsatz z.B. von Bower
-+ Unit-Testing
++ Software Architectural aspects such as SOLID (https://en.wikipedia.org/wiki/SOLID_(object-oriented_design))
++ Refactoring Basics
+    provide a basis for refactoring +
+    + Recognize, resolve and test bad smells
++ Javascript Basics
++ AngularJS Basics
+    + Building a AngularJS application
+        + Declaration Pattern MV * (MVC / MVVM)
+    + Detecting and explaining the concepts in AngularJS such as
+        + Scopes
+        + Data Binding (Two-Way Binding vs. One-Way Binding)
+        + Depdendency Injection & Injector
+        + Templates
+        + Expressions
+        + Filter
+        + Directives
+        + Modules
+        + Routing
++ AngularJS and integration with other JS frameworks such as JQuery, ZeptoJS vs. JQlite
++ Dependency Management
+    + Optimization -> Application example Bower
++ Unit testing
 + Debugging
-+ Automatisierung & Optimierung
-    + Notwendigkeit und Potential der Automatisierung erkennen, wie z.B.
-        + Serve bzw. Watchers
-        + Browser Sync
-        + Wireing von Abhängigkeiten
-        + Automatisierung von (Unit-)Tests
-    + Notwendigkeit der Optmierung erkennen, wie z.B.
-        + Minification
-        + Konkatenierung
-        + Vendor-Prefixes
-        + ngAnnotate
-        + File Suffixes
++ Automation & optimization
+    recognize the necessity and potential of automation, such as
+        + Serve or Watchers
+        + Browser Sync
+        + Wireing dependencies
+        + Automation (unit-) test
+    recognize the need for optimization such as
+        + minification
+        + concatenation
+        + Vendor prefixes
+        + ngAnnotate
+        + File Suffixes
 
-## Aufsetzen der Umgebung
+## Setting up the environment
 
-```bash
+`` `Bash
 npm install
-```
+`` `
 
-## Gulp Tasks
+## Gulp tasks
 
-Folgende Gulp-Tasks stehen zur Verfügung:
+Following Gulp tasks are available:
 
-Starten der gesamten Umgebung:
-```bash
+Start the entire environment:
+`` `Bash
 gulp
-```
+`` `
 
 
-Starten der Überprüfung der Codierrichtlinien:
-```bash
+Start reviewing the coding guidelines:
+`` `Bash
 gulp jshint
-```
+`` `
 
-Starten der "imaginären" Unit-Tests:
-```bash
+Start the "imaginary" unit tests:
+`` `Bash
 gulp test
-```
+`` `
 
-Starten des Webservers:
-```bash
+Starting the Web Server:
+`` `Bash
 gulp connect
-```
+`` `
