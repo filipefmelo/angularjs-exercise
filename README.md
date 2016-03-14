@@ -51,9 +51,9 @@ The focus is on the following topics:
 
 ## Setting up the environment
 
-`` `Bash
+```bash
 npm install
-`` `
+```
 
 ## Gulp tasks
 
