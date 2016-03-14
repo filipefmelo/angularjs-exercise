@@ -60,22 +60,22 @@ npm install
 Following Gulp tasks are available:
 
 Start the entire environment:
-`` `Bash
+```bash
 gulp
-`` `
+```
 
 
 Start reviewing the coding guidelines:
-`` `Bash
+```bash
 gulp jshint
-`` `
+```
 
 Start the "imaginary" unit tests:
-`` `Bash
+```bash
 gulp test
-`` `
+```
 
 Starting the Web Server:
-`` `Bash
+```bash
 gulp connect
-`` `
+```
